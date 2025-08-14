@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooking With Sonal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cooking With Sonal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="layout">
+                <aside class="sidebar centered" id="sidebar">
+                    <div class="circle-bg" style="background-image: url('images/khichdi.png');">
+                        <h2>Lunch</h2>
+                    </div>
+                    <h4 class="category" onclick="showRecipe('puri')">Farsi Puri</h4>
+                    <h4 class="category" onclick="showRecipe('rotli')">Rotli</h4>
+                    <h4 class="category" onclick="showRecipe('kadhi')">Gujarati Kadhi</h4>
+                    <h4 class="category" onclick="showRecipe('rotla')">Bajra Na Rotla</h4>
+                    <h4 class="category" onclick="showRecipe('khid')">Khichdi</h4>
+                    <h4 class="category" onclick="showRecipe('shaak')">Eggplant and Potato Shaak</h4>
+                    <h4 class="category" onclick="showRecipe('kadhimasala')">Kadhi Masala</h4>
+                    <h4 class="category" onclick="showRecipe('guvar')">Guvar Dhokli</h4>
+                    <h4 class="category" onclick="showRecipe('sooji')">Sooji Dhokla</h4>
+                    <h4 class="category" onclick="showRecipe('batata')">Batata Ni Sukhi Bhaji-Potato Shaak</h4>
+                </aside>
+                <div class="recipe-info">
+                    <div id="category-intro">
+                        <h2>Discover Lunch</h2>
+                    </div>
+
+                    <div id="batata" class="recipe" style="display: none;">
+                        <h2>Batata Ni Sukhi Bhaji-Potato Shaak</h2>
+                        <p>A comforting dry potato curry tossed with mustard seeds, turmeric, and spices—simple, flavorful, and perfect with roti.</p>
+                        <p style="font-weight: bold;">Ready In: 30 minutes</p>
+                        <p style="font-weight: bold;">Serves: 3-4 people </p>
+                        <hr>
+                        <h3>Ingredients</h3>
+                        <div class="ingredients-section">
+                            <div class="ingredients-header">
+                                <img src="images/batata.png" alt="Ingredients" class="ingredients-img">
+                            </div>
+                            <ul class="ingredients-list">
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">5 boiled potatoes</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">6 chopped serrano chilis (as per taste)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">1 tsp cumin seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">½ tsp mustard seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">1 tbsp sesame seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">6 tbsp oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">2 tsp salt (as per taste)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">⅛ tsp asafetida</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item8">
+                                        <label for="item8" class="checkbox-label">¼ tsp garam masala</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item9">
+                                        <label for="item9" class="checkbox-label">2 tsp coriander powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item10">
+                                        <label for="item10" class="checkbox-label">1 tsp turmeric powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item11">
+                                        <label for="item11" class="checkbox-label">1 tbsp lemon juice</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item12">
+                                        <label for="item12" class="checkbox-label">2 tsp sugar</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item13">
+                                        <label for="item13" class="checkbox-label">5-10 curry leaves</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item14">
+                                        <label for="item14" class="checkbox-label">3-4 bay leaves</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item15">
+                                        <label for="item15" class="checkbox-label">3 whole red dried chilis</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item16">
+                                        <label for="item16" class="checkbox-label">10-15 cashew pieces</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item117">
+                                        <label for="item17" class="checkbox-label">10-15 peanuts</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item18">
+                                        <label for="item18" class="checkbox-label">10-15 raisins</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item19">
+                                        <label for="item19" class="checkbox-label">Chopped cilantro for garnish</label>
+                                    </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <h3>Preparation</h3>
+                        <hr>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1" class="checkbox-label">Heat oil in a pan and add mustard seeds. When the mustard seeds begin to crackle add cumin seeds, sesame seeds, asafetida, red dried chilis, green chilis, curry leaves, bay leaves, cashews, peanuts, and raisins.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2" class="checkbox-label">Saute everything for a few seconds. Then, cut boiled potatoes into cubes and add it into the pan.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3" class="checkbox-label">Add turmeric powder, coriander powder, garam masala, lemon juice, salt, and sugar to the pan and mix well. Cook the shaak for 5 minutes on medium heat. Then, turn the gas off and garnish it with cilantro.</label>
+                                </li>
+                            </ul>
+                                <div class="tips">
+                                    <p style="font-weight: bold;">Tips: Serve with puri, roti, bhakri, shrikhand, mango pulp, and khichdi. If you don’t want to add green chilis you can substitute it with red chilis.</p>
+                                </div>
+                    </div>
+
+                    <div id="sooji" class="recipe" style="display: none;">
+                        <h2>Sooji Dhokla</h2>
+                        <p>A light and fluffy steamed savory cake made from semolina, perfect for breakfast or a snack.</p>
+                        <p style="font-weight: bold;">Ready In: 45 minutes</p>
+                        <p style="font-weight: bold;">Serves: 4 people </p>
+                        <hr>
+                        <h3>Ingredients</h3>
+                        <div class="ingredients-section">
+                            <div class="ingredients-header">
+                                <img src="images/sooji.png" alt="Ingredients" class="ingredients-img">
+                            </div>
+                            <ul class="ingredients-list">
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">1 cup semolina (sooji)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">½ cup yogurt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">¾ cup water</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">1 or 2 tbsp oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">1 tsp green chili paste</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">1 tsp eno fruit salt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">1 tsp salt (as per taste)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">1 tsp lemon juice (optional)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item8">
+                                        <label for="item8" class="checkbox-label">1 tsp sugar (optional)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item9">
+                                        <label for="item9" class="checkbox-label">¼ tsp turmeric (optional)</label>
+                                    </li>
+                                    <p>Tempering:</p>
+                                    <li>
+                                        <input type="checkbox" id="item10">
+                                        <label for="item10" class="checkbox-label">3 tbsp oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item11">
+                                        <label for="item11" class="checkbox-label">1 tsp mustard seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item12">
+                                        <label for="item12" class="checkbox-label">2 tsp sesame seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item13">
+                                        <label for="item13" class="checkbox-label">¼ tsp asafetida (optional)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item14">
+                                        <label for="item14" class="checkbox-label">2-3 slits or cut round green chilis </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item15">
+                                        <label for="item15" class="checkbox-label">3-4 tbsp cilantro</label>
+                                    </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <h3>Preparation</h3>
+                        <hr>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1" class="checkbox-label">Take semolina, yogurt, green chili paste, ginger paste, and oil in a mixer and mix it well. If the batter seems dense add water. Let the batter sit for 10 minutes so that the semolina puffs up.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2" class="checkbox-label">In a vessel add water to boil. Then put the jali stand inside it and turn the gas on to medium heat. Cover the lid so the water boils quickly.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3" class="checkbox-label">As the batter puffs up, add salt and eno fruit salt. Pour 1 tsp of water over it and mix it well.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item4">
+                                    <label for="item4" class="checkbox-label">Take an 8 inch cake pan for making dhokla, grease it with oil and put the batter in it.Then tap the thali and make it even.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item5">
+                                    <label for="item5" class="checkbox-label">As water boils in the vessel, put the dhokla thali in water, cover and cook it for 20 minutes, then check dhokla.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item6">
+                                    <label for="item6" class="checkbox-label">When the dhokla is ready, take out the thali and keep it on the jali stand to cool. Once it’s cooled off, cut the dhokla into pieces with a knife. Then take out the dhokla from the thali and transfer it on a serving plate.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item7">
+                                    <label for="item7" class="checkbox-label">For tempering, heat oil in a small pan on medium heat and add black mustard seeds, sesame seeds, and green chilis.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item8">
+                                    <label for="item8" class="checkbox-label">Saute it for 30 seconds and then pour the tadka over the dhokla. Garnish dhokla with chopped cilantro.</label>
+                                </li>
+                            </ul>
+                                <div class="tips">
+                                    <p style="font-weight: bold;">Tips: Serve dhokla with cilantro, tamarind, peanut, or coconut chutney.</p>
+                                </div>
+                            </div>
+                    
+                    <div id="guvar" class="recipe" style="display: none;">
+                        <h2>Guvar Dhokli</h2>
+                        <p>Cluster beans and wheat dumplings cooked in a spiced Gujarati curry.</p>
+                        <p style="font-weight: bold;">Ready In: 1 hour</p>
+                        <p style="font-weight: bold;">Serves: 3-4 people </p>
+                        <hr>
+                        <h3>Ingredients</h3>
+                        <div class="ingredients-section">
+                            <div class="ingredients-header">
+                                <img src="images/guvar.png" alt="Ingredients" class="ingredients-img">
+                            </div>
+                            <ul class="ingredients-list">
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">2 cups wheat flour</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">½ tsp turmeric powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">1 tsp red chili powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">1 tsp salt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">1 tsp coriander powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">3 tbsp oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">½ cup to little more water(to make firm dough)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">2 cups small cut cluster beans (guvar)</label>
+                                    </li>
+                                    <p>Tempering:</p>
+                                    <li>
+                                        <input type="checkbox" id="item8">
+                                        <label for="item8" class="checkbox-label">2 tbsp oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item9">
+                                        <label for="item9" class="checkbox-label">1 tbsp sesame seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item10">
+                                        <label for="item10" class="checkbox-label">1 tsp carom seeds (ajwain)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item11">
+                                        <label for="item11" class="checkbox-label">¼ tsp asafetida</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item12">
+                                        <label for="item12" class="checkbox-label">1 tbsp green chili paste</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item13">
+                                        <label for="item13" class="checkbox-label">1 tbsp ginger paste</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item14">
+                                        <label for="item14" class="checkbox-label">2 tsp salt (as per taste)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item15">
+                                        <label for="item15" class="checkbox-label">2 tsp coriander powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item16">
+                                        <label for="item16" class="checkbox-label">½ tsp turmeric powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item17">
+                                        <label for="item17" class="checkbox-label">3 tsp sugar</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item18">
+                                        <label for="item18" class="checkbox-label">7 cups water</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item19">
+                                        <label for="item19" class="checkbox-label">1 tbsp red chili powder (optional)</label>
+                                    </li>
+                                    <p>Dough Variations:</p>
+                                    <li>
+                                        <input type="checkbox" id="item20">
+                                        <label for="item20" class="checkbox-label">1 ½ cup fine wheat flour and ½ cup coarse wheat flour</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item21">
+                                        <label for="item21" class="checkbox-label">1 ½ wheat flour and ½ cup gram flour (besan)</label>
+                                    </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <h3>Preparation</h3>
+                        <hr>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1" class="checkbox-label">Mix all the ingredients and prepare a firm dough. Take a portion of the dough and roll as thin as you can with help of dry flour. Cut square shaped dhokli and cover it while working.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2" class="checkbox-label">Heat oil in a pot and add carom seeds, sesame seeds, and asafetida. Bring 6-7 cups of water to boil in a heavy bottom pot on high heat and add cluster beans.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3" class="checkbox-label">After it’s been boiled for 5 minutes add chili, garlic, ginger paste, turmeric powder, red chili powder, coriander powder, salt, and sugar. Boil it again.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item4">
+                                    <label for="item4" class="checkbox-label">Once it starts boiling again, add dhoklis a little at a time to the boiling water and keep stirring.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item5">
+                                    <label for="item5" class="checkbox-label">After all the dhoklis are added, cook it covered on medium to low heat for 30 minutes. Add water when the gravy starts to become dry and thick. Stir it again and garnish with coriander. If you add the dhoklis to the cold water it will break.</label>
+                                </li>
+                            </ul>
+                        <div class="tips">
+                            <p style="font-weight: bold;">Serve the dhokli hot. You can also make the dhokli with long beans (choli), papdi, papdi lilva, or pigeon peas(toor). You can add raw groundnut oil.</p>
+                        </div>
+                    </div>
+                    
+                    <div id="puri" class="recipe" style="display: none;">
+                        <h2>Farsi Puri</h2>
+                        <p>A crispy, flaky, and spiced savory puri that's perfect for tea-time or festive snacking.</p>
+                        <p style="font-weight: bold;">Ready In: 1 hour</p>
+                        <p style="font-weight: bold;">Serves: 5-7 people </p>
+                        <hr>
+                        <h3>Ingredients</h3>
+                        <div class="ingredients-section">
+                            <div class="ingredients-header">
+                                <img src="images/farsipuri.png" alt="Ingredients" class="ingredients-img">
+                            </div>
+                            <ul class="ingredients-list">
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">2 cups all-purpose unbleached flour</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">1 ½ stick butter (6 oz)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">1 tsp salt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">1 tsp cornstarch</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">2 tsp crush black pepper</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label"> 1 tsp crushed cumin seed</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">¾ cup water</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">1  tsp red chili powder (optional)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item8">
+                                        <label for="item8" class="checkbox-label">½ tsp turmeric powder (optional)</label>
+                                    </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <h3>Preparation</h3>
+                        <hr>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1" class="checkbox-label">To prepare the dough: transfer the flour in a bowl and add salt, cumin seed, black pepper, corn starch, and melted butter.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2" class="checkbox-label">Mix it well and add water to make the dough hard. Cover the dough and let it rest for 20 minutes.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3" class="checkbox-label">Make small size balls from the dough and roll thin puris.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item4">
+                                    <label for="item4" class="checkbox-label">Prick using a fork or knife so the puris won’t become fluffy while frying. Once all the puris are rolled, fry them on slow flame until they turn light pink from both sides.</label>
+                                </li>
+                            </ul>
+                                <div class="tips">
+                                    <p style="font-weight: bold;">Tips: Farsi puri variations:</p>
+                                    <p>1. 1 cup semolina and 1 cup all-purpose flour</p>
+                                    <p>2. You can also make it with wheat flour only</p>
+                                    <p>3. You can also add ½ cup dried or fresh fenugreek leaves</p>
+                                    <p>4. You can also put cut spinach or pureed spinach</p>
+                                </div>
+                            </div>
+                
+                        <div id="puri" class="recipe" style="display: none;">
+                            <h2>Farsi Puri</h2>
+                            <p>A crispy, flaky, and spiced savory puri that's perfect for tea-time or festive snacking.</p>
+                            <p style="font-weight: bold;">Ready In: 1 hour</p>
+                            <p style="font-weight: bold;">Serves: 5-7 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/farsipuri.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">2 cups all-purpose unbleached flour</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 ½ stick butter (6 oz)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">1 tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">1 tsp cornstarch</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">2 tsp crush black pepper</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label"> 1 tsp crushed cumin seed</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">¾ cup water</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">1  tsp red chili powder (optional)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">½ tsp turmeric powder (optional)</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">To prepare the dough: transfer the flour in a bowl and add salt, cumin seed, black pepper, corn starch, and melted butter.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Mix it well and add water to make the dough hard. Cover the dough and let it rest for 20 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Make small size balls from the dough and roll thin puris.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Prick using a fork or knife so the puris won’t become fluffy while frying. Once all the puris are rolled, fry them on slow flame until they turn light pink from both sides.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Farsi puri variations:</p>
+                                <p>1. 1 cup semolina and 1 cup all-purpose flour</p>
+                                <p>2. You can also make it with wheat flour only</p>
+                                <p>3. You can also add ½ cup dried or fresh fenugreek leaves</p>
+                                <p>4. You can also put cut spinach or pureed spinach</p>
+                            </div>
+                        </div>
+                        
+                        <div id="rotli" class="recipe" style="display: none;">
+                            <h2>Rotli</h2>
+                            <p>A soft, thin Gujarati flatbread made from wheat flour, served fresh with sabzi or dal.</p>
+                            <p style="font-weight: bold;">Ready In: 30 minutes</p>
+                            <p style="font-weight: bold;">Serves: 3-5 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/rotli.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 cup wheat flour</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 tbsp oil</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">½ cup water</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Combine the wheat flour and oil in a bowl and mix it well. Start adding warm water little at a time and knead it until the dough comes together and  becomes soft.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Cover the dough with a dish and let it sit for 30 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">After the dough has been rested, knead it once again and smooth it out.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Divide the dough into ten equal portions. Make smooth balls and flatten it out with your palm.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Take a piece of the flattened dough and dust it with wheat flour.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Start rolling the dough into a round shape with a rolling pin. About halfway through you can dust it with flour again for easier rolling.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">As you roll the roti, it should move in a circular motion. Keep rolling and lifting it with your hand so the dough doesn’t stick to the board. </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item8">
+                                        <label for="item8" class="checkbox-label">Roll the roti into 7 inch diameter.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item9">
+                                        <label for="item9" class="checkbox-label">Heat a nonstick griddle on medium heat. Once the griddle is hot, put the rolled roti on it.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item10">
+                                        <label for="item10" class="checkbox-label">Within 30 seconds, you will see a few light brown spots on top. Flip the roti and cook the other side for 30 seconds.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item11">
+                                        <label for="item11" class="checkbox-label">Using the tongs, hold the tawa and put it on the back burner.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item12">
+                                        <label for="item12" class="checkbox-label">Turn the heat on high. Then place the roti (top side should go on flame) on direct flame. Immediately it will puff up.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item13">
+                                        <label for="item13" class="checkbox-label">When the roti has puffed up, using the tongs hold the roti carefully from the edge and flip it.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item14">
+                                        <label for="item15" class="checkbox-label">Cook the other side on a direct flame for 2-3 seconds.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item15">
+                                        <label for="item15" class="checkbox-label">Place the roti in a plate and add ghee if desired.</label>
+                                    </li>
+                                 </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Serve it hot with shaak.</p>
+                            </div>
+                        </div>
+
+                        <div id="kadhi" class="recipe" style="display: none;">
+                            <h2>Gujarati Kadhi</h2>
+                            <p>A light, tangy yogurt-based curry spiced with ginger, green chili, and sweetened with a hint of jaggery.</p>
+                            <p style="font-weight: bold;">Ready In: 35 minutes</p>
+                            <p style="font-weight: bold;">Serves: 4 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/kadhi.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 whole cinnamon stick</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 cup yogurt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">2 ½ cups water</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">3 tbsp besan (gram flour)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">1 ½ tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">1 tbsp brown sugar</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">2 tsp ginger</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">1 tsp green chili</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item9">
+                                            <label for="item9" class="checkbox-label">1 tbsp ghee (butter)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item10">
+                                            <label for="item10" class="checkbox-label">1 tsp cumin seed</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item11">
+                                            <label for="item12" class="checkbox-label">½ tsp mustard seed</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item13">
+                                            <label for="item13" class="checkbox-label">½ tsp fenugreek seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item14">
+                                            <label for="item14" class="checkbox-label">¼ tsp asafetida</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item15">
+                                            <label for="item15" class="checkbox-label">¼ tsp turmeric (optional)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item16">
+                                            <label for="item16" class="checkbox-label">1 tsp crushed garlic (optional)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item17">
+                                            <label for="item17" class="checkbox-label">8-10 curry leaves</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item18">
+                                            <label for="item18" class="checkbox-label">4 cloves of garlic</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item19">
+                                            <label for="item19" class="checkbox-label">1 stick of cinnamon</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Combine the yogurt, besan, and water in a pot and mix it with a hand blender.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Add ginger garlic paste, sugar, and salt.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Heat ghee in a kadhai and add fenugreek seeds, cumin seeds, mustard seeds, asafetida, and two whole red chilis, and cloves.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">When the seeds crackle add the mixture into the yogurt. Add curry leaves as well.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Mix well and let it simmer for two minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Garnish with coriander leaves.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Serve it hot with roti, rotla, puran poli, khichdi, and pulav.</p>
+                            </div>
+                        </div>
+                        <div id="khid" class="recipe" style="display: none;">
+                            <h2>Khichdi</h2>
+                            <p>A comforting, lightly spiced rice and lentil dish that's warm and nourishing.</p>
+                            <p style="font-weight: bold;">Ready In: 50 minutes</p>
+                            <p style="font-weight: bold;">Serves: 4 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/khid.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 cup basmati rice</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 cup moong dal</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">½ tsp turmeric powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">1 ½ tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">4 cups water(for thin consistency you could add a ½ cup to 1 cup)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">2-3 tbsp ghee</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Rinse and wash dal and rice together. Soak them both for 30 minutes to 1 hour.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Add salt, turmeric powder, and ghee into the rice and dal mixture. Close the pressure cooker lid and cook the khichdi on medium heat for 3-4 whistles. If the khichdi is being made on the instant pot then cook it for 15 minutes.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Khichdi can be served with ghee, papdi, pickle, kadhi, buttermilk, and yogurt to spice up your full meal.</p>
+                                <p>Note: You can make khichdi using any type of rice. You can also make vaghareli khichdi by adding spices and vegetables such as potatoes, carrots, green peas, and onion.</p>
+                            </div>
+                        </div>
+
+                        <div id="rotla" class="recipe" style="display: none;">
+                            <h2>Bajra Na Rotla</h2>
+                            <p>A warm, hearty millet flatbread with a rich, earthy flavor.</p>
+                            <p style="font-weight: bold;">Ready In: 30 minutes</p>
+                            <p style="font-weight: bold;">Serves: 5 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/rotla.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">2 cups bajra (black millet) flour</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">Melted ghee for brushing</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">To make bajra na rotla, mix black millet flour and salt together.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Add lukewarm water and knead into semi-soft dough. Keep kneading for 3-4 minutes until the dough is soft.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Divide the dough into 5 equal portions. Using a little bit of bajra flour, roll a portion of the dough into 5 inch diameter.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Heat a nonstick griddle or clay tava on high heat and when it’s hot place the rotla gently over it.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Cook the rotla until small blisters appear on the surface. Turn over the rotla and cook the other side for a few seconds.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Then cook the rotla on an open flame until it puffs up on both sides. Spread ghee on top of the rotla.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Serve with jaggery and garlic chutney.</p>
+                            </div>
+                        </div>
+                        <div id="khid" class="recipe" style="display: none;">
+                            <h2>Khichdi</h2>
+                            <p>A comforting, lightly spiced rice and lentil dish that's warm and nourishing.</p>
+                            <p style="font-weight: bold;">Ready In: 50 minutes</p>
+                            <p style="font-weight: bold;">Serves: 4 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/khid.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 cup basmati rice</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 cup moong dal</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">½ tsp turmeric powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">1 ½ tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">4 cups water(for thin consistency you could add a ½ cup to 1 cup)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">2-3 tbsp ghee</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Rinse and wash dal and rice together. Soak them both for 30 minutes to 1 hour.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Add salt, turmeric powder, and ghee into the rice and dal mixture. Close the pressure cooker lid and cook the khichdi on medium heat for 3-4 whistles. If the khichdi is being made on the instant pot then cook it for 15 minutes.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Khichdi can be served with ghee, papdi, pickle, kadhi, buttermilk, and yogurt to spice up your full meal.</p>
+                                <p>Note: You can make khichdi using any type of rice. You can also make vaghareli khichdi by adding spices and vegetables such as potatoes, carrots, green peas, and onion.</p>
+                            </div>
+                        </div>
+
+                        <div id="kadhimasala" class="recipe" style="display: none;">
+                            <h2>Kadhi Masala</h2>
+                            <p>A tangy yogurt-based Gujarati curry spiced with a flavorful masala and tempered with ghee and mustard seeds.</p>
+                            <p style="font-weight: bold;">Ready In: 15 minutes</p>
+                            <p style="font-weight: bold;">Serves: 10 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/kadhimasala.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 cup pigeon peas(toor)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">1 cup crushed ginger</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">¾ cup crushed amba haldi (mango ginger)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">20-25 thai chilis (as per taste)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">2 tbsp cumin seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">1 tbsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">1 ½ cup curry leaves</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Grind all the ingredients in a food processor and make it into a paste.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Add the paste into silicone ice cube trays and let it chill in the freezer.</label>
+                                    </li>
+                                </ul>
+                        </div>
+                        
+                        <div id="shaak" class="recipe" style="display: none;">
+                            <h2>Eggplant and Potato Shaak</h2>
+                            <p>A comforting Gujarati curry made with tender eggplant and potatoes simmered in spiced tomato masala.</p>
+                            <p style="font-weight: bold;">Ready In: 35 minutes</p>
+                            <p style="font-weight: bold;">Serves: 4 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/shaak.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 big American eggplant</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">3 potatoes</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">2 tomatoes</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">5 tbsp oil</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">1 tsp cumin seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">½ tsp mustard seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">½ tsp turmeric powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">1 tbsp coriander powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item9">
+                                            <label for="item9" class="checkbox-label">3 tbsp sesame seed powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item10">
+                                            <label for="item10" class="checkbox-label">1 tbsp crushed peanut powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item11">
+                                            <label for="item11" class="checkbox-label">1 tsp red chili powder (as per taste)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item12">
+                                            <label for="item12" class="checkbox-label">1 tbsp pickle masala</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item13">
+                                            <label for="item13" class="checkbox-label">¼ tsp asafetida</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item14">
+                                            <label for="item14" class="checkbox-label">2 tsp green chili</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item15">
+                                            <label for="item15" class="checkbox-label">2 tsp ginger</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item16">
+                                            <label for="item16" class="checkbox-label">1 tsp crushed garlic (optional)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item17">
+                                            <label for="item17" class="checkbox-label">4 bay leaves</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item18">
+                                            <label for="item18" class="checkbox-label">4 cloves</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item19">
+                                            <label for="item19" class="checkbox-label">1 cinnamon stick</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item20">
+                                            <label for="item20" class="checkbox-label">2 tbsp brown sugar (optional)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item21">
+                                            <label for="item21" class="checkbox-label">2 tsp salt (as per taste)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item22">
+                                            <label for="item22" class="checkbox-label">3 red chilis</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item23">
+                                            <label for="item23" class="checkbox-label">2 cups water</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item24">
+                                            <label for="item24" class="checkbox-label">Cilantro for garnish</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Cut the eggplant, potatoes, and tomatoes into big, diced pieces. Wash the eggplant and potatoes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Heat oil in a heavy pot. Add dried red chilis, mustard seeds, cumin seeds, cloves, cinnamon stick, and asafetida.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Then add the tomatoes and cook it until they become tender. When the tomatoes are cooked, add salt, turmeric powder, red chili powder, coriander powder, green chili, pickle masala, sesame seed powder, crushed peanut powder, and ginger. </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Let it saute for five minutes. Then add eggplant, potatoes, brown sugar, and water. Cover the lid and let it cook for 10-15 minutes on medium heat until the eggplant and potatoes are completely cooked. </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Garnish with cilantro.</label>
+                                    </li>
+                                </ul>
+                        </div>
+                </div>
+            </div>
+            <script>
+                function setActiveCategory(clickedElement) {
+                  // Remove 'active' from all buttons
+                  const categories = document.querySelectorAll('.category');
+                  categories.forEach(el => el.classList.remove('active'));
+              
+                  // Add 'active' to the clicked one
+                  clickedElement.classList.add('active');
+                }
+              
+                function showRecipe(id) {
+                  // Save selection
+                  localStorage.setItem('selectedRecipe', id);
+              
+                  // Hide intro
+                  const intro = document.getElementById("category-intro");
+                  if (intro) intro.style.display = "none";
+              
+                  // Hide all recipes
+                  document.querySelectorAll('.recipe').forEach(recipe => {
+                    recipe.style.display = 'none';
+                  });
+              
+                  // Show selected recipe
+                  const selected = document.getElementById(id);
+                  if (selected) selected.style.display = "block";
+              
+                  // Highlight clicked button
+                  const allCategories = document.querySelectorAll('.category');
+                  allCategories.forEach(btn => btn.classList.remove('active'));
+              
+                  const clicked = document.querySelector(`[onclick="showRecipe('${id}')"]`);
+                  if (clicked) clicked.classList.add('active');
+                }
+              
+                window.addEventListener('DOMContentLoaded', () => {
+                  // From-home check
+                  if (sessionStorage.getItem('fromHome') === 'true') {
+                    localStorage.removeItem('selectedRecipe');
+                    sessionStorage.removeItem('fromHome');
+                  }
+              
+                  // Restore saved recipe if available
+                  const savedRecipeId = localStorage.getItem('selectedRecipe');
+                  if (savedRecipeId && document.getElementById(savedRecipeId)) {
+                    showRecipe(savedRecipeId);
+                  } else {
+                    // Default state
+                    const intro = document.getElementById("category-intro");
+                    if (intro) intro.style.display = "block";
+              
+                    document.querySelectorAll('.recipe').forEach(recipe => {
+                      recipe.style.display = 'none';
+                    });
+                  }
+              
+                  // Optional: Handle ?from=home in URL
+                  const urlParams = new URLSearchParams(window.location.search);
+                  const from = urlParams.get('from');
+                  if (from === "home") {
+                    document.getElementById("category-intro").style.display = "block";
+                    document.querySelectorAll('.recipe').forEach(el => el.style.display = 'none');
+                    history.pushState(null, '', 'lunch.html'); // Clean URL
+                  }
+                });
+              </script>
+            </body>
+        </main>
+    </body>
+</html>

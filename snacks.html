@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooking With Sonal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cooking With Sonal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="layout">
+                <aside class="sidebar centered" id="sidebar">
+                    <div class="circle-bg" style="background-image: url('images/samosasimage.png');">
+                        <h2>Snacks & Appetizers</h2>
+                      </div>
+                    <h4 class="category" onclick="showRecipe('salsa')">Salsa</h4>
+                    <h4 class="category" onclick="showRecipe('sev')">Sev</h4>
+                    <h4 class="category" onclick="showRecipe('peanutpodi')">Peanut Podi</h4>
+                    <h4 class="category" onclick="showRecipe('thikha')">Thikha Gathiya</h4>
+                    <h4 class="category" onclick="showRecipe('chaimasala')">Chai Masala</h4>
+                    <h4 class="category" onclick="showRecipe('samosa')">Samosa</h4>
+                  </aside>
+                <div class="recipe-info">
+                    <div id="category-intro">
+                            <h2>Discover Snacks & Appetizers</h2>
+
+                        <div>
+                            <img src="images/salsa.png" alt="Ingredients" class="ingredients-img" onclick="showRecipe('salsa')">
+                        </div>
+                    </div>
+                    <div id="samosa" class="recipe" style="display: none;">
+                        <h2>Samosa</h2>
+                        <hr>
+                        <p>A crispy, golden pastry filled with spiced potatoes and peas, perfect as a savory snack or appetizer.</p>
+                        <p style="font-weight: bold;">Ready In: 1 hour 10 minutes</p>
+                        <p style="font-weight: bold;">Serves: 10 People (depending on how much made) </p>
+                        <hr>
+                        <h3>Ingredients</h3>
+                        <div class="ingredients-section">
+                            <div class="ingredients-header">
+                                <img src="images/samosarec.png" alt="Ingredients" class="ingredients-img">
+                            </div>
+                            <ul class="ingredients-list">
+                                <p>Filling:</p>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">⅓ cup oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">10 boiled potatoes</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">2 cups frozen peas</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">3 tbsp green chili (as per taste)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">2 tbsp ginger</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">1 tbsp cumin seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item6" class="checkbox-label">2 tbsp crushed coriander seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item8">
+                                        <label for="item8" class="checkbox-label">1 tbsp + 2 tsp salt (as per taste)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item9">
+                                        <label for="item9" class="checkbox-label">2 tbsp dry mango powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item10">
+                                        <label for="item10" class="checkbox-label">¼ tsp asafetida</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item10">
+                                        <label for="item10" class="checkbox-label">3 tsp garam masala</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item11">
+                                        <label for="item11" class="checkbox-label">1 cup chopped cilantro</label>
+                                    </li>
+                                    <p>Dough:</p>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item12" class="checkbox-label">⅓ cup oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">2 cups all-purpose flour</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">1 tsp salt</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">½ tsp carom seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">½ tsp carom seeds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">4 tbsp ghee or oil</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">½ cup to a little more water</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">2 tsp lemon juice</label>
+                                    </li>
+                            </ul>
+                        </div>
+                        </p>
+                        <h3>Preparation</h3>
+                        <hr>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1" class="checkbox-label">For the filling, smash the boiled potatoes with a smasher. In a wok or pan add oil. When the oil heats up add asafetida, crushed coriander seeds, and cumin seeds</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2" class="checkbox-label">Then add the frozen peas and cover the lid so it can cook for 4 to 5 minutes. Add ginger, garam masala, green chili, salt, mango powder, and smashed potatoes.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3" class="checkbox-label">Mix everything together and close the lid to let it cook for 5 minutes.Turn the gas off and add cilantro and mix it.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item4">
+                                    <label for="item4" class="checkbox-label">In a large mixing bowl mix flour, oil, and water and make a dough. Add water little by little while mixing.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item5">
+                                    <label for="item5" class="checkbox-label">Make the dough stiff(not too hard or too soft). Cover the dough and let it rest for 30 minutes.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item6">
+                                    <label for="item6" class="checkbox-label">Roll out the dough into 8 inches and cut in half. Coat edges of the semicircle with water. </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item7">
+                                    <label for="item7" class="checkbox-label">Pick two corners of the semicircle and bring them together, edges overlapping slightly, to form a cone. Press down on the seam to stick it.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item8">
+                                    <label for="item8" class="checkbox-label">Fill the samosa with potato filling, around 1-2 tbsp of it. Brush edges again with water, then pinch edges and seal the samosa.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item9">
+                                    <label for="item9" class="checkbox-label">Repeat the process with remaining dough and filling. Keep the filled samosas covered with a moist kitchen towel while working.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item10">
+                                    <label for="item10" class="checkbox-label">Fry samosa: Heat oil in a frying pan to 350℉. Drop the samosas into hot oil, 4-5 pieces at a time.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item11">
+                                    <label for="item11" class="checkbox-label">Reduce heat to medium-low and fry them for 4-5 minutes, until golden and crisp. Drain samosa on a paper towel before serving.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item12">
+                                    <label for="item12" class="checkbox-label">Baking samosa:Brush each samosa with oil. Bake in preheated 350℉ for 30-40 minutes, until golden.</label>
+                                </li>
+                            </ul>
+                        <p style="font-weight: bold;">Tips: Serve with cilantro and tamarind chutney. You can freeze samosas after filling and shaping them. You can also put the samosas in the air frying after filling and shaping them. 
+                            Optional: You can make samosas with onion, paneer, mixed vegetables, spinach, or chana dal filling.</p>
+                    </div>
+
+                    <div id="salsa" class="recipe" style="display: none;">
+                            <h2>Salsa</h2>
+                            <hr>
+                            <p>Zesty, fresh, and perfect for any dip-worthy moment.</p>
+                            <p style="font-weight: bold;">Ready In: 30 Mins</p>
+                            <p style="font-weight: bold;">Serves: 4-5 People </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/salsa.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">8 red tomatoes</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">2 green tomatoes</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">1 red onion</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">3 cloves of garlic</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">6 red roasted chili de arbol</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">1 guajillo dried red chili</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item6" class="checkbox-label">2 roasted jalapenos</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">Half bunch of cilantro</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item9">
+                                            <label for="item9" class="checkbox-label">1 tsp black crushed pepper</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item10">
+                                            <label for="item10" class="checkbox-label">1 tsp black crushed pepper</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item10">
+                                            <label for="item10" class="checkbox-label">1 ⅛ tsp salt as per taste</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item11">
+                                            <label for="item11" class="checkbox-label">1 tsp paprika powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item12">
+                                            <label for="item12" class="checkbox-label">1 ½ tsp cumin powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item12">
+                                            <label for="item12" class="checkbox-label">1 tsp sugar</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">In a pot put water and add 3 red tomatoes and 2 green tomatoes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Drain the tomatoes in a colander and take out the skin.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">In a food processor churn the tomatoes. Cut the other 5 red tomatoes, red onion, garlic, cilantro, and jalapenos into pieces.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Roast the chili de arbol and the guajillo dried red chili. Let it sit in water for half an hour.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Put that chili in the blender and make it into a paste. Then strain it with a strainer so all the seeds will come out.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Add that paste to the salsa. Add sugar, cumin seed, salt, black crushed pepper, and paprika powder.</label>
+                                    </li>
+                                </ul>
+                            <p style="font-weight: bold;">Tips: If you would like it spicy you could add some more jalapenos and red chili pepper. </p>
+                        </div>
+                        
+                        <div id="sev" class="recipe" style="display: none;">
+                            <h2>Sev</h2>
+                            <p>Crispy, savory chickpea noodles that add the perfect crunch to any snack or dish.</p>
+                            <p style="font-weight: bold;">Ready In: 25 Mins</p>
+                            <p style="font-weight: bold;">Serves: 8 people</p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/sev.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">4 cups chickpea flour (besan)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">2 tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">¼ tsp asafetida</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">4 tbsp oil</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">1 ⅔ cups water</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">1 ⅔ cups water</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">½ tsp turmeric powder</label>
+                                        </li>
+                                </ul>
+                            </p>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Add all the ingredients and make a dough.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Heat oil for frying in a frying pan. Take sev sancha and fit the mold with the thickest holes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Fill the dough in the sev sancha and close the lid tightly.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Turn the handle of the machine and press out thick strands into hot oil.When strands start to fall into the oil, slowly move the machine in a circular motion.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Deep fry on medium heat until it turns golden brown and crisp for 2-3 minutes. Drain it on absorbent paper using a perforated spoon.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Let it cool for 5-10 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Store in an air-tight container and sprinkle black salt if desired.</label>
+                                    </li>
+                                </ul>
+                            <p style="font-weight: bold;">Tips: These gathiya’s are served with tea during snack time.</p>
+                        </div>
+
+                        <div id="peanutpodi" class="recipe" style="display: none;">
+                            <h2>Peanut Podi</h2>
+                            <p>Peanut podi is a spicy, nutty powder that adds a tasty kick to rice or idli.</p>
+                            <p style="font-weight: bold;">Ready In: 20 Mins</p>
+                            <p style="font-weight: bold;">Serves: 8 people</p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/peanutpodi.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                    <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">1 cup raw peanuts</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">15 green chilies (depends on spice level) </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">10-13 garlic cloves peeled</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">½ cup Finely Chopped Cilantro</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">1 teaspoon Salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">2 ½  teaspoon oil</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">1 teaspoon Cumin seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">¼ teaspoon Hing</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">In a food processor combine  Peanuts, green chilies, garlic and grind it into fine medium coarse powder.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">In a pan heat oil then add cumin seeds, then grounded powder and Hing and roast in mediu, flame for 5-7 minutes . Make sure you are constantly mixing it.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Then add salt, turn off the stove and add the chopped Cilantro</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Store it in an airtight container.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: This Podi goes well with Idli, Dosa and Rice. Mix the powder with Ghee or sesame oil.</p>
+                            </div>
+                        </div>
+                        
+                        <div id="thikha" class="recipe" style="display: none;">
+                            <h2>Thikha Gathiya</h2>
+                            <p>A spicy, crunchy snack made from chickpea flour that's perfect with a hot cup of chai.</p>
+                            <p style="font-weight: bold;">Ready In: 30 Mins</p>
+                            <p style="font-weight: bold;">Serves: 4 people</p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/thikha.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                    <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">2 cups chickpea flour</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">2 tbsp oil</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">¼ tsp carom seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">½ tsp salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">½ tbsp red chili powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">¼ tsp turmeric powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">½ tsp chaat masala</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">½ tsp black pepper</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item9">
+                                            <label for="item9" class="checkbox-label">½ tsp black salt</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item10">
+                                            <label for="item10" class="checkbox-label">⅔ cups water</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Add all the ingredients and make a dough.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Heat oil for frying in a frying pan. Take sev sancha and fit the mold with the thickest holes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Fill the dough in the sev sancha and close the lid tightly.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Turn the handle of the machine and press out thick strands into hot oil.When strands start to fall into the oil, slowly move the machine in a circular motion.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">Deep fry on medium heat until it turns golden brown and crisp for 2-3 minutes. Drain it on absorbent paper using a perforated spoon.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">Let it cool for 5-10 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item7">
+                                        <label for="item7" class="checkbox-label">Store in an air-tight container and sprinkle black salt if desired.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: These gathiya’s are served with tea during snack time.</p>
+                            </div>
+                        </div>
+                       
+                        <div id="chaimasala" class="recipe" style="display: none;">
+                            <h2>Indian Chai Masala</h2>
+                            <p>A fragrant spice blend that adds warmth and flavor to your everyday cup of tea.</p>
+                            <p style="font-weight: bold;">Ready In: 25 Mins</p>
+                            <p style="font-weight: bold;">Serves: 5 people</p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/chaimasala.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                    <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">⅔ cup whole black pepper</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">2 tbsp cloves(whole)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">¼ cup cardamom seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">1 tbsp cinnamon powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">2 tsp nutmeg powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">⅔ cup dried ginger powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">1 whole cinnamon stick</label>
+                                        </li>
+                                    </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Roast the black pepper, cloves, and cinnamon in a slow flame for 3-5 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">If you would like the masala to be fresh you grind the ingredients in a blender.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Then make it into fine powder.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: You can store the powder in the freezer to make it last long.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <script>
+                function setActiveCategory(clickedElement) {
+                  // Remove 'active' from all buttons
+                  const categories = document.querySelectorAll('.category');
+                  categories.forEach(el => el.classList.remove('active'));
+              
+                  // Add 'active' to the clicked one
+                  clickedElement.classList.add('active');
+                }
+              
+                function showRecipe(id) {
+                  // Save selection
+                  localStorage.setItem('selectedRecipe', id);
+              
+                  // Hide intro
+                  const intro = document.getElementById("category-intro");
+                  if (intro) intro.style.display = "none";
+              
+                  // Hide all recipes
+                  document.querySelectorAll('.recipe').forEach(recipe => {
+                    recipe.style.display = 'none';
+                  });
+              
+                  // Show selected recipe
+                  const selected = document.getElementById(id);
+                  if (selected) selected.style.display = "block";
+              
+                  // Highlight clicked button
+                  const allCategories = document.querySelectorAll('.category');
+                  allCategories.forEach(btn => btn.classList.remove('active'));
+              
+                  const clicked = document.querySelector(`[onclick="showRecipe('${id}')"]`);
+                  if (clicked) clicked.classList.add('active');
+                }
+              
+                window.addEventListener('DOMContentLoaded', () => {
+                  // From-home check
+                  if (sessionStorage.getItem('fromHome') === 'true') {
+                    localStorage.removeItem('selectedRecipe');
+                    sessionStorage.removeItem('fromHome');
+                  }
+              
+                  // Restore saved recipe if available
+                  const savedRecipeId = localStorage.getItem('selectedRecipe');
+                  if (savedRecipeId && document.getElementById(savedRecipeId)) {
+                    showRecipe(savedRecipeId);
+                  } else {
+                    // Default state
+                    const intro = document.getElementById("category-intro");
+                    if (intro) intro.style.display = "block";
+              
+                    document.querySelectorAll('.recipe').forEach(recipe => {
+                      recipe.style.display = 'none';
+                    });
+                  }
+              
+                  // Optional: Handle ?from=home in URL
+                  const urlParams = new URLSearchParams(window.location.search);
+                  const from = urlParams.get('from');
+                  if (from === "home") {
+                    document.getElementById("category-intro").style.display = "block";
+                    document.querySelectorAll('.recipe').forEach(el => el.style.display = 'none');
+                    history.pushState(null, '', 'lunch.html'); // Clean URL
+                  }
+                });
+              </script>
+            </body>
+        </main>
+    </body>
+</html>

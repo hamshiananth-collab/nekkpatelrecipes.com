@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooking With Sonal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <header>
+            <h1>Cooking With Sonal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="layout">
+                <aside class="sidebar centered" id="sidebar">
+                    <div class="circle-bg" style="background-image: url('images/sukhdi.png');">
+                        <h2>Dessert</h2>
+                      </div>
+                    <h4 class="category" onclick="showRecipe('kheer')">Kheer</h4>
+                    <h4 class="category" onclick="showRecipe('sukdhi')">Sukdhi</h4>
+                  </aside>
+                <div class="recipe-info">
+                    <div id="category-intro">
+                        <h2>Discover Dessert</h2>
+                    </div>
+                    <div id="sukdhi" class="recipe" style="display: none;">
+                        <h2>Sukdhi</h2>
+                        <hr>
+                        <p>A warm, melt-in-your-mouth Gujarati sweet bursting with jaggery and ghee.</p>
+                        <p style="font-weight: bold;">Ready In: 30 hour</p>
+                        <p style="font-weight: bold;">Serves: 12-24 people </p>
+                        <hr>
+                        <h3>Ingredients</h3>
+                        <div class="ingredients-section">
+                            <div class="ingredients-header">
+                                <img src="images/sukdhi2.png" alt="Ingredients" class="ingredients-img">
+                            </div>
+                            <ul class="ingredients-list">
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">1 cup wheat flour</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">¾ cup to 1 cup grated jaggery</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">¾ cup to 1 cup ghee</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">½ tsp cardamom powder</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">1 tbsp dry ginger powder (optional)</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item5">
+                                        <label for="item5" class="checkbox-label">2 tbsp chopped almonds</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item6">
+                                        <label for="item6" class="checkbox-label">2 tbsp chopped pistachios</label>
+                                    </li>
+                            </ul>
+                        </div>
+                        <h3>Preparation</h3>
+                        <hr>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" id="item1">
+                                    <label for="item1" class="checkbox-label">Heat ghee in a pan and add wheat flour. Roast the wheat flour on medium heat, stirring continuously.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item2">
+                                    <label for="item2" class="checkbox-label">Once the flour turns golden brown turn the gas off and add ginger powder, grated jaggery, and cardamom powder. Mix it well.</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="item3">
+                                    <label for="item3" class="checkbox-label">In a grease tray put the sukhdi mixture and level it. Garnish it with dry fruits and let it cool. Cut into pieces and store in an airtight container.</label>
+                                </li>
+                            </ul>
+                        <div class="tips">
+                            <p style="font-weight: bold;">Tips: The sukhdi tastes best when freshly made. You can also use powdered jaggery instead of grated jaggery.</p>
+                        </div>
+                    </div>
+
+                    <div id="kheer" class="recipe" style="display: none;">
+                            <h2>Kheer</h2>
+                            <hr>
+                            <p>A creamy Indian rice pudding made with milk, sugar, and cardamom, garnished with nuts.</p>
+                            <p style="font-weight: bold;">Ready In: 1 hour</p>
+                            <p style="font-weight: bold;">Serves: 4 people </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/kheer.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">4 cups whole milk</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">¼ cup basmati rice</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">¼ cup cardamom (elaichi)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">⅛ tsp nutmeg powder</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">⅓ cup sugar(as per taste)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">8-10 crushed almonds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label">8-10 crushed pistachios</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">8-10 crushed cashews(optional)</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">8-10 raisins</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item9">
+                                            <label for="item9" class="checkbox-label">Few strands saffron</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            </p>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Rinse and soak the rice for 30-45 minutes in water. Drain out the excess water. To make the kheer thick, break the rice into small pieces with your hand.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Heat milk in a heavy bottom pan. Add rice and boil it on medium heat until the rice is cooked and the milk thickens. This will take 25-30 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Add sugar and nutmeg powder then stir it for 10 minutes. Garnish with saffron and dry fruits.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Store the cubes in a ziploc bag and use it when making kadhi. Serve warm or chilled. You can substitute basmati rice with long grain rice or jasmine rice.</p>
+                                <p>Optional: Add ¼ cup yellow turmeric if you decide to make white kadhi</p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <script>
+                function setActiveCategory(clickedElement) {
+                  // Remove 'active' from all buttons
+                  const categories = document.querySelectorAll('.category');
+                  categories.forEach(el => el.classList.remove('active'));
+              
+                  // Add 'active' to the clicked one
+                  clickedElement.classList.add('active');
+                }
+              
+                function showRecipe(id) {
+                  // Save selection
+                  localStorage.setItem('selectedRecipe', id);
+              
+                  // Hide intro
+                  const intro = document.getElementById("category-intro");
+                  if (intro) intro.style.display = "none";
+              
+                  // Hide all recipes
+                  document.querySelectorAll('.recipe').forEach(recipe => {
+                    recipe.style.display = 'none';
+                  });
+              
+                  // Show selected recipe
+                  const selected = document.getElementById(id);
+                  if (selected) selected.style.display = "block";
+              
+                  // Highlight clicked button
+                  const allCategories = document.querySelectorAll('.category');
+                  allCategories.forEach(btn => btn.classList.remove('active'));
+              
+                  const clicked = document.querySelector(`[onclick="showRecipe('${id}')"]`);
+                  if (clicked) clicked.classList.add('active');
+                }
+              
+                window.addEventListener('DOMContentLoaded', () => {
+                  // From-home check
+                  if (sessionStorage.getItem('fromHome') === 'true') {
+                    localStorage.removeItem('selectedRecipe');
+                    sessionStorage.removeItem('fromHome');
+                  }
+              
+                  // Restore saved recipe if available
+                  const savedRecipeId = localStorage.getItem('selectedRecipe');
+                  if (savedRecipeId && document.getElementById(savedRecipeId)) {
+                    showRecipe(savedRecipeId);
+                  } else {
+                    // Default state
+                    const intro = document.getElementById("category-intro");
+                    if (intro) intro.style.display = "block";
+              
+                    document.querySelectorAll('.recipe').forEach(recipe => {
+                      recipe.style.display = 'none';
+                    });
+                  }
+              
+                  // Optional: Handle ?from=home in URL
+                  const urlParams = new URLSearchParams(window.location.search);
+                  const from = urlParams.get('from');
+                  if (from === "home") {
+                    document.getElementById("category-intro").style.display = "block";
+                    document.querySelectorAll('.recipe').forEach(el => el.style.display = 'none');
+                    history.pushState(null, '', 'lunch.html'); // Clean URL
+                  }
+                });
+              </script>
+            </body>
+        </main>
+    </body>
+</html>

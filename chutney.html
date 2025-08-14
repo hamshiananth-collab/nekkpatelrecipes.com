@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooking With Sonal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">      
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Cooking With Sonal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="layout">
+                <aside class="sidebar centered" id="sidebar">
+                    <div class="circle-bg" style="background-image: url('images/chutneyimage.png');">
+                        <h2>Chutney</h2>
+                    </div>
+                    <h4 class="category" onclick="showRecipe('garlic')">Green Garlic Cilantro Chutney</h4>
+                    <h4 class="category" onclick="showRecipe('ginger')">Ginger Turmeric/Chili Chutney</h4>
+                </aside>
+                <div class="recipe-info">
+                    <div id="category-intro">
+                        <h2>Discover Chutney</h2>
+                    </div>
+                        <div id="garlic" class="recipe" style="display: none;">
+                            <h2>Green Garlic Cilantro Chutney</h2>
+                            <p>A vibrant, flavorful chutney made with fresh herbs and garlic, perfect as a dip or spread.</p>
+                            <p style="font-weight: bold;">Ready In: 30 Mins</p>
+                            <p style="font-weight: bold;">Serves: 10-15 People </p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/garlic.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">5-10 green chilis</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">¼ cup fine chopped ginger</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">¼ cup fresh green garlic</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">1 cup cilantro</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item5">
+                                            <label for="item5" class="checkbox-label">Few strands saffron</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item6">
+                                            <label for="item6" class="checkbox-label"> ¼ tsp kosher salt (3 seperate times) </label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item7">
+                                            <label for="item7" class="checkbox-label">½ tsp roasted cumin seeds</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item8">
+                                            <label for="item8" class="checkbox-label">1 ½ tsp fresh lemon juice</label>
+                                        </li>
+                                </ul>
+                            </div>
+
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">In a pan, first add the cumin seeds and roast them until they are golden. Then crush the cumin seeds in a spice grinder.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Add the chilis in the mortar and pestle and grind it into a paste. Then add the ginger and green garlic and grind them both into a paste.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Start adding about ¼ cup of cilantro and ¼ tsp kosher salt each time in the mortar and pestle and grind it into a paste. Add the crushed cumin seeds into the paste along with lemon juice and mix well.</label>
+                                    </li>
+                                </ul>
+                            <p style="font-weight: bold;">Tips: To make this chutney last longer you add ½ tbsp vinegar and store it in a pyrex glass container or in a jar. Serve with rotli and shaak, rotla, or spread over bread.</p>
+                        </div>
+                        
+                        <div id="ginger" class="recipe" style="display: none;">
+                            <h2>Ginger Turmeric/Chili Chutney</h2>
+                            <p>A zesty fusion of fire and roots, this chutney blends ginger, turmeric, and chili into one bold, golden bite.</p>
+                            <p style="font-weight: bold;">Ready In: 25 Mins</p>
+                            <p style="font-weight: bold;">Serves: 8 people</p>
+                            <hr>
+                            <h3>Ingredients</h3>
+                            <div class="ingredients-section">
+                                <div class="ingredients-header">
+                                    <img src="images/ginger.png" alt="Ingredients" class="ingredients-img">
+                                </div>
+                                <ul class="ingredients-list">
+                                        <li>
+                                            <input type="checkbox" id="item1">
+                                            <label for="item1" class="checkbox-label">½ cup ginger</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item2">
+                                            <label for="item2" class="checkbox-label">½ cup turmeric</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item3">
+                                            <label for="item3" class="checkbox-label">5-10 red thai chilis</label>
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" id="item4">
+                                            <label for="item4" class="checkbox-label">Salt as per your taste</label>
+                                        </li>
+                                </ul>
+                            </div>
+                            <h3>Preparation</h3>
+                            <hr>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">Peel ginger and turmeric with a peeler. Then dice the ginger and turmeric into small pieces.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Using the mortar and pestle first grind the chilis until it turns into a paste. Add the ginger and turmeric and grind them into a paste.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Add the chilis in the mortar and pestle and grind it into a paste. Then add the ginger and green garlic and grind them both into a paste.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Turn the handle of the machine and press out thick strands into hot oil.When strands start to fall into the oil, slowly move the machine in a circular motion.</label>
+                                    </li>
+                                </ul>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips:Tips: To make this chutney last longer you add ½ tbsp vinegar and store it in a pyrex glass container or in a jar. Serve with rotli and shaak, rotla, or spread over bread.</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <script>
+                function setActiveCategory(clickedElement) {
+                  // Remove 'active' from all buttons
+                  const categories = document.querySelectorAll('.category');
+                  categories.forEach(el => el.classList.remove('active'));
+              
+                  // Add 'active' to the clicked one
+                  clickedElement.classList.add('active');
+                }
+              
+                function showRecipe(id) {
+                  // Save selection
+                  localStorage.setItem('selectedRecipe', id);
+              
+                  // Hide intro
+                  const intro = document.getElementById("category-intro");
+                  if (intro) intro.style.display = "none";
+              
+                  // Hide all recipes
+                  document.querySelectorAll('.recipe').forEach(recipe => {
+                    recipe.style.display = 'none';
+                  });
+              
+                  // Show selected recipe
+                  const selected = document.getElementById(id);
+                  if (selected) selected.style.display = "block";
+              
+                  // Highlight clicked button
+                  const allCategories = document.querySelectorAll('.category');
+                  allCategories.forEach(btn => btn.classList.remove('active'));
+              
+                  const clicked = document.querySelector(`[onclick="showRecipe('${id}')"]`);
+                  if (clicked) clicked.classList.add('active');
+                }
+              
+                window.addEventListener('DOMContentLoaded', () => {
+                  // From-home check
+                  if (sessionStorage.getItem('fromHome') === 'true') {
+                    localStorage.removeItem('selectedRecipe');
+                    sessionStorage.removeItem('fromHome');
+                  }
+              
+                  // Restore saved recipe if available
+                  const savedRecipeId = localStorage.getItem('selectedRecipe');
+                  if (savedRecipeId && document.getElementById(savedRecipeId)) {
+                    showRecipe(savedRecipeId);
+                  } else {
+                    // Default state
+                    const intro = document.getElementById("category-intro");
+                    if (intro) intro.style.display = "block";
+              
+                    document.querySelectorAll('.recipe').forEach(recipe => {
+                      recipe.style.display = 'none';
+                    });
+                  }
+              
+                  // Optional: Handle ?from=home in URL
+                  const urlParams = new URLSearchParams(window.location.search);
+                  const from = urlParams.get('from');
+                  if (from === "home") {
+                    document.getElementById("category-intro").style.display = "block";
+                    document.querySelectorAll('.recipe').forEach(el => el.style.display = 'none');
+                    history.pushState(null, '', 'chutney.html'); // Clean URL
+                  }
+                });
+              </script>     
+            </body>
+        </main>
+    </body>
+</html>

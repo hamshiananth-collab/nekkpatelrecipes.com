@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cooking With Sonal</title>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">    
+        <link rel="stylesheet" href="styles.css">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Cooking With Sonal</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-content">
+            <div class="layout">
+                <aside class="sidebar centered" id="sidebar">
+                    <div class="circle-bg" style="background-image: url('images/americanchopsueyimage.png');">
+                        <h2>Dinner</h2>
+                    </div>
+                    <h4 class="category" onclick="showRecipe('chopsuey')">American Chop Suey</h4>
+                  </aside>
+                <div class="recipe-info">
+                    <div id="category-intro">
+                        <h2>Discover Dinner</h2>
+                    </div>
+                        <div id="chopsuey" class="recipe" style="display: none;">
+                                <h2>American Chop Suey</h2>
+                                <p>A crispy noodle dish with a sweet and tangy veggie sauce.</p>
+                                <p style="font-weight: bold;">Ready In: 1 hour</p>
+                                <p style="font-weight: bold;">Serves: 4 people </p>
+                                <hr>
+                                <h3>Ingredients</h3>
+                                <div class="ingredients-section">
+                                    <div class="ingredients-header">
+                                        <img src="images/chopsuey.png" alt="Ingredients" class="ingredients-img">
+                                    </div>
+                                        <ul>
+                                            <li>
+                                                <input type="checkbox" id="item1">
+                                                <label for="item1" class="checkbox-label">1 packet Pancit Canton oriental style noodles</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item2">
+                                                <label for="item2" class="checkbox-label">1 cup chopped carrots</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item3">
+                                                <label for="item3" class="checkbox-label">1 white onion chopped</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item4">
+                                                <label for="item4" class="checkbox-label">½ cup chopped green beans</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item5">
+                                                <label for="item5" class="checkbox-label">2 cups chopped cabbage</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item6">
+                                                <label for="items" class="checkbox-label">2 cups chopped mushrooms</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item7">
+                                                <label for="item7" class="checkbox-label">1 chopped green zucchini</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item8">
+                                                <label for="item8" class="checkbox-label">1 bell pepper(red, yellow, or green)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item9">
+                                                <label for="item9" class="checkbox-label">2 cups broccoli florets</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item10">
+                                                <label for="item10" class="checkbox-label">1 chinese eggplant chopped</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item11">
+                                                <label for="item11" class="checkbox-label">2 cups firm tofu cut into cubes</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item12">
+                                                <label for="item12" class="checkbox-label">¼ cup baby corn</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item13">
+                                                <label for="item13" class="checkbox-label">¼ cup water chestnuts</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item14">
+                                                <label for="item14" class="checkbox-label">1 tsp salt</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item15">
+                                                <label for="item25" class="checkbox-label">1 tsp cornstarch</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item16">
+                                                <label for="item16" class="checkbox-label">6 cups water</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item17">
+                                                <label for="item17" class="checkbox-label">3 tbsp sesame oil</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item18">
+                                                <label for="item18" class="checkbox-label">2 tsp green chili</label>
+                                            </li>
+                                            <h4>Sauce:</h4>
+                                            <li>
+                                                <input type="checkbox" id="item1">
+                                                <label for="item8" class="checkbox-label">4 tbsp yoshida sweet and savory sauce or kung pao stir fry sauce</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item8">
+                                                <label for="item1" class="checkbox-label">1 tbsp vegetarian mushroom sauce</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item2">
+                                                <label for="item2" class="checkbox-label">1 tsp rice vinegar</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item3">
+                                                <label for="item3" class="checkbox-label">3 tbsp soy sauce</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item4">
+                                                <label for="item4" class="checkbox-label">1 tbsp red chili sauce</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item5">
+                                                <label for="item5" class="checkbox-label">1 tbsp brown sugar</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item6">
+                                                <label for="item6" class="checkbox-label">1 tbsp ketchup</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item7">
+                                                <label for="item7" class="checkbox-label">1 tbsp sesame seeds</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item8">
+                                                <label for="item8" class="checkbox-label">½ tsp turmeric powder (optional)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item9">
+                                                <label for="item9" class="checkbox-label">½ tsp turmeric powder (optional)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item10">
+                                                <label for="item10" class="checkbox-label">½ tsp turmeric powder (optional)</label>
+                                            </li>
+                                            <li>
+                                                <input type="checkbox" id="item11">
+                                                <label for="item11" class="checkbox-label">½ tsp turmeric powder (optional)</label>
+                                            </li>
+                                        </ul>
+                                </div>
+                            <h3>Preparation</h3>
+                            <hr>
+                            <p>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="item1">
+                                        <label for="item1" class="checkbox-label">To prepare the dough: transfer the flour in a bowl and add salt, cumin seed, black pepper, corn starch, and melted butter.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item2">
+                                        <label for="item2" class="checkbox-label">Mix it well and add water to make the dough hard. Cover the dough and let it rest for 20 minutes.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item3">
+                                        <label for="item3" class="checkbox-label">Make small size balls from the dough and roll thin puris.</label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="item4">
+                                        <label for="item4" class="checkbox-label">Prick using a fork or knife so the puris won’t become fluffy while frying. Once all the puris are rolled, fry them on slow flame until they turn light pink from both sides.</label>
+                                    </li>
+                                </ul>
+                            </p>
+                            <div class="tips">
+                                <p style="font-weight: bold;">Tips: Farsi puri variations:</p>
+                                <p>1. 1 cup semolina and 1 cup all-purpose flour</p>
+                                <p>2. You can also make it with wheat flour only</p>
+                                <p>3. You can also add ½ cup dried or fresh fenugreek leaves</p>
+                                <p>4. You can also put cut spinach or pureed spinach</p>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <script>
+                function setActiveCategory(clickedElement) {
+                  // Remove 'active' from all buttons
+                  const categories = document.querySelectorAll('.category');
+                  categories.forEach(el => el.classList.remove('active'));
+              
+                  // Add 'active' to the clicked one
+                  clickedElement.classList.add('active');
+                }
+              
+                function showRecipe(id) {
+                  // Save selection
+                  localStorage.setItem('selectedRecipe', id);
+              
+                  // Hide intro
+                  const intro = document.getElementById("category-intro");
+                  if (intro) intro.style.display = "none";
+              
+                  // Hide all recipes
+                  document.querySelectorAll('.recipe').forEach(recipe => {
+                    recipe.style.display = 'none';
+                  });
+              
+                  // Show selected recipe
+                  const selected = document.getElementById(id);
+                  if (selected) selected.style.display = "block";
+              
+                  // Highlight clicked button
+                  const allCategories = document.querySelectorAll('.category');
+                  allCategories.forEach(btn => btn.classList.remove('active'));
+              
+                  const clicked = document.querySelector(`[onclick="showRecipe('${id}')"]`);
+                  if (clicked) clicked.classList.add('active');
+                }
+              
+                window.addEventListener('DOMContentLoaded', () => {
+                  // From-home check
+                  if (sessionStorage.getItem('fromHome') === 'true') {
+                    localStorage.removeItem('selectedRecipe');
+                    sessionStorage.removeItem('fromHome');
+                  }
+              
+                  // Restore saved recipe if available
+                  const savedRecipeId = localStorage.getItem('selectedRecipe');
+                  if (savedRecipeId && document.getElementById(savedRecipeId)) {
+                    showRecipe(savedRecipeId);
+                  } else {
+                    // Default state
+                    const intro = document.getElementById("category-intro");
+                    if (intro) intro.style.display = "block";
+              
+                    document.querySelectorAll('.recipe').forEach(recipe => {
+                      recipe.style.display = 'none';
+                    });
+                  }
+              
+                  // Optional: Handle ?from=home in URL
+                  const urlParams = new URLSearchParams(window.location.search);
+                  const from = urlParams.get('from');
+                  if (from === "home") {
+                    document.getElementById("category-intro").style.display = "block";
+                    document.querySelectorAll('.recipe').forEach(el => el.style.display = 'none');
+                    history.pushState(null, '', 'lunch.html'); // Clean URL
+                  }
+                });
+              </script>
+            </body>
+        </main>
+    </body>
+</html>
